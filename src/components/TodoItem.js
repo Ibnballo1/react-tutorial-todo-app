@@ -9,6 +9,12 @@ const TodoItem = (props) => (
       onChange={() => props.handleChangeProps(props.todo.id)}
     />
     {props.todo.title}
+    <button
+      type="button"
+      onClick={() => props.handleDeleteProps(props.todo.id)}
+    >
+      Delete
+    </button>
   </li>
 )
 
