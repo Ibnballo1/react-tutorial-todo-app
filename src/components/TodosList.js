@@ -3,7 +3,7 @@ import TodoItem from './TodoItem';
 
 export default class TodosList extends React.Component {
   render() {
-    // console.log(this.props.handleChangeProps);
+    // console.log(this.props.handleDeleteProps);
     return (
       <div>
         <ul>
@@ -12,6 +12,7 @@ export default class TodosList extends React.Component {
               key={todo.id}
               todo={todo}
               handleChangeProps={this.props.handleChangeProps}
+              handleDeleteProps={this.props.handleDeleteProps}
             />
           ))}
         </ul>
