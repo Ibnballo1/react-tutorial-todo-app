@@ -2,7 +2,14 @@ import React from 'react';
 
 // Function Component Version
 const TodoItem = (props) => (
-  <li>{props.todo.title}</li>
+  <li>
+    <input
+      type="checkbox"
+      checked={props.todo.completed}
+      onChange={() => console.log("Changed")}
+    />
+    {props.todo.title}
+  </li>
 )
 
 export default TodoItem;
