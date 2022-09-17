@@ -13,6 +13,7 @@ export default class TodosList extends React.Component {
               todo={todo}
               handleChangeProps={this.props.handleChangeProps}
               handleDeleteProps={this.props.handleDeleteProps}
+              setUpdate={this.props.setUpdate}
             />
           ))}
         </ul>
